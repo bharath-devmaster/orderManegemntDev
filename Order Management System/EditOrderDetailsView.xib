@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EditOrderDetailsView" customModule="Order_Management_System" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="So7-vm-EXX">
+                    <rect key="frame" x="0.0" y="84" width="414" height="478"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Order Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-je-bTd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6n6-4s-a38">
+                            <rect key="frame" x="0.0" y="69" width="414" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customer PhoneNumber" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLt-9v-W7z">
+                            <rect key="frame" x="0.0" y="138" width="414" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Order Due Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-vp-reD">
+                            <rect key="frame" x="0.0" y="207" width="414" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Order Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-g2-nrK">
+                            <rect key="frame" x="0.0" y="276" width="414" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Order Total" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pU8-55-Ihr">
+                            <rect key="frame" x="0.0" y="345" width="414" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWB-Ik-GGX">
+                            <rect key="frame" x="0.0" y="414" width="414" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gec-Ww-T1m">
+                                    <rect key="frame" x="77" y="17" width="100" height="30"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="aPt-wP-QHx"/>
+                                        <constraint firstAttribute="height" constant="30" id="qtt-DV-5gp"/>
+                                    </constraints>
+                                    <state key="normal" title="Go Back"/>
+                                    <connections>
+                                        <action selector="goBackAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tXf-VZ-NFz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzP-x8-ddA">
+                                    <rect key="frame" x="237" y="17" width="100" height="30"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="7nz-ES-Ihk"/>
+                                        <constraint firstAttribute="height" constant="30" id="bik-O0-UR7"/>
+                                    </constraints>
+                                    <state key="normal" title="Save"/>
+                                    <connections>
+                                        <action selector="editDetailsSaveAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="LT5-hV-wKr"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstItem="pzP-x8-ddA" firstAttribute="centerY" secondItem="cWB-Ik-GGX" secondAttribute="centerY" id="PE6-qB-xUs"/>
+                                <constraint firstItem="gec-Ww-T1m" firstAttribute="centerY" secondItem="cWB-Ik-GGX" secondAttribute="centerY" id="b61-gO-rQL"/>
+                                <constraint firstItem="gec-Ww-T1m" firstAttribute="centerX" secondItem="cWB-Ik-GGX" secondAttribute="centerX" constant="-80" id="lTQ-qO-xkR"/>
+                                <constraint firstItem="pzP-x8-ddA" firstAttribute="centerX" secondItem="cWB-Ik-GGX" secondAttribute="centerX" constant="80" id="lvb-zJ-IyM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-Os-mBV">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-La-XaS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="zB7-E0-8NQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="xu6-La-XaS" firstAttribute="leading" secondItem="Sh7-Os-mBV" secondAttribute="leading" id="F2r-tP-2Ga"/>
+                        <constraint firstAttribute="trailing" secondItem="xu6-La-XaS" secondAttribute="trailing" id="MrX-SJ-ohV"/>
+                        <constraint firstAttribute="bottom" secondItem="xu6-La-XaS" secondAttribute="bottom" id="UzV-JU-sKF"/>
+                        <constraint firstItem="xu6-La-XaS" firstAttribute="top" secondItem="Sh7-Os-mBV" secondAttribute="top" id="opg-ee-fD2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="Sh7-Os-mBV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5bt-2x-JdR"/>
+                <constraint firstItem="So7-vm-EXX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JKg-qN-lMY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="So7-vm-EXX" secondAttribute="trailing" id="SOI-wj-4rf"/>
+                <constraint firstItem="So7-vm-EXX" firstAttribute="top" secondItem="Sh7-Os-mBV" secondAttribute="bottom" id="eTq-r3-zLw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="So7-vm-EXX" secondAttribute="bottom" constant="300" id="g0R-2i-HXn"/>
+                <constraint firstItem="Sh7-Os-mBV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ycv-9q-8hl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sh7-Os-mBV" secondAttribute="trailing" id="zMe-sA-iUW"/>
+            </constraints>
+            <connections>
+                <outlet property="customerAddress" destination="mNu-g2-nrK" id="EOx-IY-YEQ"/>
+                <outlet property="customerName" destination="6n6-4s-a38" id="QD4-sW-os5"/>
+                <outlet property="customerPhone" destination="qLt-9v-W7z" id="W3p-15-6AO"/>
+                <outlet property="headerLbl" destination="xu6-La-XaS" id="rED-wp-qRP"/>
+                <outlet property="orderDueDate" destination="3g8-vp-reD" id="aar-rJ-my5"/>
+                <outlet property="orderNUmber" destination="qYa-je-bTd" id="Y8N-pM-3bg"/>
+                <outlet property="orderTotal" destination="pU8-55-Ihr" id="gQz-Gr-88H"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
